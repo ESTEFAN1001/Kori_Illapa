@@ -1,0 +1,61 @@
+﻿<Window x:Class="KoriIllapaWPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoriIllapaWPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Login" Height="500" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Normal">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1.5,0" MappingMode="RelativeToBoundingBox" StartPoint="0.4,0">
+                <GradientStop Color="#FF094385"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Height="100" VerticalAlignment="Top">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1.5,0" StartPoint="0.1,0">
+                    <GradientStop Color="Cyan"/>
+                    <GradientStop Color="#FF004C8B" Offset="1"/>
+                    <GradientStop Color="#FF0063C5" Offset="0.494"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackPanel x:Name="stpClose" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" MouseDown="stpClose_MouseDown" >
+                <materialDesign:PackIcon Kind="Close" Foreground="Cyan" Width="30" Height="30" FontWeight="ExtraBold"></materialDesign:PackIcon>
+            </StackPanel>
+        </Grid>
+        <Grid Height="100" VerticalAlignment="Top" Margin="0,50,0,0">
+            <TextBlock Text="Sesion Usuario" Foreground="AliceBlue" FontSize="25" FontFamily="Verdana" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold" Height="49" Margin="10,0,0, 42" Width="237"/>
+            <Image Source="Images/login.png" Margin="220,-34,10,-37"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal">
+            <materialDesign:PackIcon Kind="User" Foreground="Cyan" Width="40" Height="40" VerticalAlignment="Center" Margin="20,206,20,246"/>
+            <TextBox x:Name="txtUserName" Width="276" Margin="0,184,0,253" materialDesign:HintAssist.Hint="Nombre de Usuario" Foreground="Cyan" FontSize="19" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,-1,0,1">
+            <materialDesign:PackIcon Kind="Password" Foreground="Cyan" Width="40" Height="40" VerticalAlignment="Center" Margin="20,271,20,181"/>
+            <PasswordBox x:Name="pwbPassword" Width="276" Margin="0,254,0,183" materialDesign:HintAssist.Hint="Ingrese su Contraseña" Foreground="Cyan" FontSize="19" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+        </StackPanel>
+        <Button x:Name="btnLogin" Content="INGRESAR" Height="40" Margin="104,350,114,102" Foreground="White" FontWeight="Bold" Click="btnLogin_Click"/>
+        <materialDesign:Card Height="50" VerticalAlignment="Bottom" Margin="20,20,20,20">
+            <materialDesign:Card.Background>
+                <LinearGradientBrush EndPoint="1.5,0" MappingMode="RelativeToBoundingBox" StartPoint="0.4,0">
+                    <GradientStop Color="#FF094385"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </materialDesign:Card.Background>
+            <TextBlock x:Name="txtInfo" Text="Bienvenido" Foreground="White" Margin="51,14,10,15" FontSize="15" FontWeight="Bold"/>
+        </materialDesign:Card>
+        <materialDesign:PackIcon Kind="InfoOutline" Width="40" Height="40" Foreground="Cyan" Margin="26,0,0,26" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Label x:Name="lblForgotPassword" Content="¿Olvidaste tu Contraseña?" HorizontalAlignment="Left" Margin="20,126,0,0" VerticalAlignment="Top" Width="189" Height="36" Foreground="Cyan" FontSize="15" FontWeight="Medium" MouseDown="lblForgotPassword_MouseDown"/>
+    </Grid>
+</Window>

@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="KoriIllapaWPF.Employee.uscEmployeAgregar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KoriIllapaWPF.Employee"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             mc:Ignorable="d"
+             d:DesignHeight="400" d:DesignWidth="760" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1.5,0" MappingMode="RelativeToBoundingBox" StartPoint="0.4,0">
+                <GradientStop Color="#FF094385"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" Margin="20,18,398,18">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="User" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtName" Width="276" Height="33" materialDesign:HintAssist.Hint="Ingrese el Nombre" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="TargetUser" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtSurname" Width="276" Height="32" materialDesign:HintAssist.Hint="Ingrese el Primer Apellido" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="TicketUser" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtLastname" Width="276" Height="33" materialDesign:HintAssist.Hint="Ingrese el Segundo Apellido" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="AddressMarkerOutline" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtDirection" Width="276" Height="32" materialDesign:HintAssist.Hint="Ingrese la Direccion" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Phone" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPhone" Width="276" Height="33" materialDesign:HintAssist.Hint="Ingrese el Telefono" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Email" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtEmail" Width="276" Height="33" materialDesign:HintAssist.Hint="Ingrese el Correo E-mail" Foreground="Cyan" FontSize="12" materialDesign:HintAssist.IsFloating="True" BorderBrush="#8900FFDC"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 0">
+                <materialDesign:PackIcon Kind="PeopleAddOutline" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbxRol" Width="267" Height="25" Margin="10, 0, 0, 0" SelectionChanged="cbxRol_SelectionChanged" Foreground="Cyan" FontSize="12" Background="#FF094385">
+                    <ComboBoxItem Content="Administrador" HorizontalAlignment="Left" Height="30" Width="267" Foreground="Cyan" FontSize="12" Background="#FF094385"/>
+                    <ComboBoxItem Content="Monitor" HorizontalAlignment="Left" Height="30" Width="267" Foreground="Cyan" FontSize="12" Background="#FF094385"/>
+                    <ComboBoxItem Content="Transporte" HorizontalAlignment="Left" Height="30" Width="267" Foreground="Cyan" FontSize="12" Background="#FF094385"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="Image" Foreground="Cyan" Width="30" Height="30" VerticalAlignment="Center"/>
+                <Label Content="Imagen" Foreground="Cyan" FontSize="12" VerticalAlignment="Bottom"/>
+                <Button x:Name="btnImageEmployee" Content="Cargar" Width="100" HorizontalAlignment="Left" Height="22" Margin="130, 0, 0, 0" FontSize="10" Click="btnImageEmployee_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="imgEmployee" Width="100" Height="100" Margin="100, 0, 0, 0"/>
+            </StackPanel>
+        </StackPanel>
+        <DataGrid x:Name="dgEmployee" HorizontalAlignment="Right" VerticalAlignment="Top" Height="249" Width="378" Background="#FFCFCFCF" Foreground="Black" BorderBrush="Black" IsReadOnly="True" CanUserAddRows="False" Margin="0,28,20,0" SelectionChanged="dgEmployee_SelectionChanged"/>
+        <Button x:Name="btnInsertar" Content="Insertar" HorizontalAlignment="Left" Margin="362,283,0,0" VerticalAlignment="Top" Width="170" Click="btnInsertar_Click"/>
+        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="362,319,0,0" VerticalAlignment="Top" Width="170" Click="btnLimpiar_Click"/>
+        <Label x:Name="lblResult" HorizontalAlignment="Left" Margin="361,361,0,0" VerticalAlignment="Top" Width="196" Foreground="White" Height="29"/>
+        <Image x:Name="imgEmployeeSelect" Margin="640,282,20,18"/>
+    </Grid>
+</UserControl>

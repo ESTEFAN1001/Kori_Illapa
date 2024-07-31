@@ -1,0 +1,8 @@
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Debug\KoriIllapaDAO.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Debug\KoriIllapaDAO.pdb
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Debug\KoriIllapaDAO.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Debug\KoriIllapaDAO.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Debug\KoriIllapaDAO.pdb
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Debug\EASendMail.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Debug\KoriIllapaDAO.csproj.CopyComplete
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Debug\KoriIllapaDAO.csprojAssemblyReference.cache

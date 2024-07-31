@@ -1,0 +1,20 @@
+﻿KoriIllapaWPF
+
+
+winexe
+C#
+.cs
+C:\Base de datos\dbKoriIllapa\KoriIllapaWPF\obj\Debug\
+KoriIllapaWPF
+none
+false
+DEBUG;TRACE
+C:\Base de datos\dbKoriIllapa\KoriIllapaWPF\App.xaml
+22-687186805
+
+29-721326592
+23459731041
+Employee\crudEmployee.xaml;Employee\uscEmployeAgregar.xaml;Employee\uscEmployee.xaml;Employee\uscEmployeeUpdateDelete.xaml;firstLogin.xaml;forgotPassword.xaml;Login.xaml;MainWindow.xaml;Main\Home.xaml;ProductCategory\crudCategory.xaml;ProductCategory\ProductCategory.xaml;Supplier\crudSupplier.xaml;Supplier\uscSupplier.xaml;Supplier\uscSupplierAgregar.xaml;Supplier\uscSupplierModify.xaml;Transport\crudTransport.xaml;Transport\crudTransportType.xaml;Transport\searchTransport.xaml;Transport\uscTransport.xaml;Transport\uscTransportAdd.xaml;Transport\uscTransportMod.xaml;Transport\wpfTransportMode.xaml;
+
+True
+

@@ -1,0 +1,7 @@
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Release\KoriIllapaDAO.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Release\KoriIllapaDAO.pdb
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\bin\Release\EASendMail.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Release\KoriIllapaDAO.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Release\KoriIllapaDAO.csproj.CopyComplete
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Release\KoriIllapaDAO.dll
+C:\Users\ASUS\OneDrive - Universidad Privada del Valle\Documents\BDD\Project\dbKoriIllapa\KoriIllapaDAO\obj\Release\KoriIllapaDAO.pdb

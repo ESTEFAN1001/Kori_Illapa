@@ -1,0 +1,49 @@
+﻿<Window x:Class="KoriIllapaWPF.Supplier.crudSupplier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoriIllapaWPF.Supplier"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="crudSupplier" Height="700" Width="840" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Normal">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1.5,0" MappingMode="RelativeToBoundingBox" StartPoint="0.4,0">
+                <GradientStop Color="#FF094385"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Height="100" VerticalAlignment="Top">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1.5,0" StartPoint="0.1,0">
+                    <GradientStop Color="Cyan"/>
+                    <GradientStop Color="#FF004C8B" Offset="1"/>
+                    <GradientStop Color="#FF0063C5" Offset="0.494"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackPanel x:Name="stpClose" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" MouseDown="stpClose_MouseDown" >
+                <materialDesign:PackIcon Kind="Close" Foreground="Cyan" Width="30" Height="30" FontWeight="ExtraBold"></materialDesign:PackIcon>
+            </StackPanel>
+        </Grid>
+        <Grid Height="100" VerticalAlignment="Top" Margin="0,50,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="427*"/>
+                <ColumnDefinition Width="365*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Adm. Proveedores" Foreground="AliceBlue" FontSize="30" FontFamily="Verdana" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold" Height="49" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
+            <Image Source="../Images/admin.png" Margin="124.936,-36,60,-35" Grid.Column="1"/>
+        </Grid>
+        <Button x:Name="btnAgregar" Content="Agregar-Generar" Foreground="White" Width="240" HorizontalAlignment="Left" Margin="39,118,0,542" FontWeight="Bold" Click="btnAgregar_Click"/>
+        <Button x:Name="btnModificar" Content="Eliminar-Modificar" Foreground="White" Width="240" HorizontalAlignment="Left" Margin="306,118,0,542" FontWeight="Bold" Click="btnModificar_Click"/>
+
+        <Grid x:Name="gridOptionSupplier" Width="800" Margin="16,160,16,10"/>
+    </Grid>
+</Window>
